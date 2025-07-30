@@ -3,58 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>闽北方言 Minbei Dialects</title>
+  <title>闽北方言网站</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="favicon.ico" />
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- Header -->
-  <header class="bg-green-700 text-white p-6 shadow">
-    <div class="max-w-5xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">闽北方言</h1>
-      <nav class="space-x-4">
-        <a href="dialects/jianou.html" class="hover:underline">方言介绍</a>
-        <a href="dictionary/index.html" class="hover:underline">方言词典</a>
-        <a href="about.html" class="hover:underline">关于本站</a>
-      </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-green-700 text-white py-12 shadow">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-4">闽北方言资料网</h1>
+      <p class="text-lg max-w-3xl mx-auto">
+        本站致力于保存、研究与传播福建北部的闽北方言，提供词典、音频、学习课程、翻译项目与学术资料等资源。
+      </p>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="max-w-5xl mx-auto p-6 mt-8">
-    <section class="mb-10">
-      <h2 class="text-3xl font-bold mb-4">什么是闽北方言？</h2>
-      <p class="text-lg leading-relaxed">
-        闽北方言是汉语闽语的一支，主要分布于福建省北部的建瓯、建阳、松溪、政和、浦城、顺昌等地，
-        具有独特的语音系统和丰富的本地词汇，是宝贵的语言文化遗产。
-      </p>
-    </section>
-
-    <!-- Sections -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- Dialect Intro -->
-      <a href="dialects/jianou.html" class="block bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">地区方言介绍</h3>
-        <p>了解各地闽北方言，如建瓯话、建阳话、松溪话等，包含语音特色与日常用语。</p>
+  <!-- Navigation Grid -->
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- 1. 闽北方言概述 -->
+      <a href="overview.html" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block">
+        <h2 class="text-xl font-semibold mb-2">闽北方言概述</h2>
+        <p>了解闽北方言的历史起源、语音与语法特点，及其与闽南、吴语、客家语的区别。</p>
       </a>
 
-      <!-- Dictionary -->
-      <a href="dictionary/index.html" class="block bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">方言词典</h3>
-        <p>查找闽北方言词汇，了解发音、拼音、IPA音标及中文解释。</p>
+      <!-- 2. 地区方言介绍 -->
+      <a href="dialects/index.html" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block">
+        <h2 class="text-xl font-semibold mb-2">地区方言介绍</h2>
+        <p>逐一介绍建瓯、建阳、顺昌等地的方言特点，包含示例、音频和普通话对比。</p>
       </a>
 
-      <!-- About -->
-      <a href="about.html" class="block bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">关于本站</h3>
-        <p>本站致力于保护与传承闽北方言，收集整理资料，提供学习资源与翻译平台。</p>
+      <!-- 3. 方言词典 -->
+      <a href="dictionary/index.html" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block">
+        <h2 class="text-xl font-semibold mb-2">方言词典</h2>
+        <p>收录常用词汇，支持拼音与 IPA 查询，按类别浏览，支持中-闽北双向检索。</p>
       </a>
-    </section>
+
+      <!-- 4. 方言语音库 -->
+      <a href="audio/index.html" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block">
+        <h2 class="text-xl font-semibold mb-2">方言语音库</h2>
+        <p>听母语者朗读常用词句，提供语音下载与文本对照，欢迎参与录音采集。</p>
+      </a>
+
+      <!-- 5. 方言学习模块 -->
+      <a href="learn/index.html" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block">
+        <h2 class="text-xl font-semibold mb-2">学习闽北方言</h2>
+        <p>提供发音教学、日常用语对照、视频课程与互动练习，适合初学者入门。</p>
+      </a>
+
+      <!-- 6. 翻译协作平台 -->
+      <a href="translation/index.html" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block">
+        <h2 class="text-xl font-semibold mb-2">翻译协作平台</h2>
+        <p>参与翻译圣经、童谣、民间故事项目，查看进度，申请成为志愿译者。</p>
+      </a>
+
+      <!-- 7. 研究与出版资源 -->
+      <a href="resources/index.html" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block">
+        <h2 class="text-xl font-semibold mb-2">研究与出版资源</h2>
+        <p>整理学术论文、民族志研究、扫描版文献与推荐阅读，适合语言研究者参考。</p>
+      </a>
+    </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 mt-12 py-4 text-center text-sm text-gray-500">
-    &copy; 2025 闽北方言 | 建设中，欢迎参与贡献
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
+    &copy; 2025 闽北方言资料网 | GitHub Pages 建站 | 欢迎参与建设
   </footer>
+
 </body>
 </html>
