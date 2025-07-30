@@ -1,83 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Knowing God App</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      background-color: #002855;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 3rem;
-      padding-bottom: 1rem;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>闽北方言 Minbei Dialects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="favicon.ico" />
 </head>
-<body>
-  <header>
-    <h1>Knowing God</h1>
-    <p>Explore the Christian faith through our mobile app</p>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6 shadow">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">闽北方言</h1>
+      <nav class="space-x-4">
+        <a href="dialects/jianou.html" class="hover:underline">方言介绍</a>
+        <a href="dictionary/index.html" class="hover:underline">方言词典</a>
+        <a href="about.html" class="hover:underline">关于本站</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Welcome to the Knowing God App</h2>
-    <p>
-      This website is used to verify the <code>app-ads.txt</code> file for ad transparency in our mobile app.  
-    </p>
-    <p>
-      Knowing God is a faith-based educational app designed to help users grow in their understanding of the Christian faith, through biblical teachings, creeds, and confessions.
-    </p>
-    <p>
-      For more information, please contact us or download the app from the <a href="https://apps.apple.com" target="_blank">App Store</a> or <a href="https://play.google.com" target="_blank">Google Play</a>.
-    </p>
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto p-6 mt-8">
+    <section class="mb-10">
+      <h2 class="text-3xl font-bold mb-4">什么是闽北方言？</h2>
+      <p class="text-lg leading-relaxed">
+        闽北方言是汉语闽语的一支，主要分布于福建省北部的建瓯、建阳、松溪、政和、浦城、顺昌等地，
+        具有独特的语音系统和丰富的本地词汇，是宝贵的语言文化遗产。
+      </p>
+    </section>
+
+    <!-- Sections -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Dialect Intro -->
+      <a href="dialects/jianou.html" class="block bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">地区方言介绍</h3>
+        <p>了解各地闽北方言，如建瓯话、建阳话、松溪话等，包含语音特色与日常用语。</p>
+      </a>
+
+      <!-- Dictionary -->
+      <a href="dictionary/index.html" class="block bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">方言词典</h3>
+        <p>查找闽北方言词汇，了解发音、拼音、IPA音标及中文解释。</p>
+      </a>
+
+      <!-- About -->
+      <a href="about.html" class="block bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">关于本站</h3>
+        <p>本站致力于保护与传承闽北方言，收集整理资料，提供学习资源与翻译平台。</p>
+      </a>
+    </section>
   </main>
 
-  <footer>
-    &copy; 2025 Knowing God. All rights reserved.
+  <!-- Footer -->
+  <footer class="bg-gray-100 mt-12 py-4 text-center text-sm text-gray-500">
+    &copy; 2025 闽北方言 | 建设中，欢迎参与贡献
   </footer>
 </body>
 </html>
-
