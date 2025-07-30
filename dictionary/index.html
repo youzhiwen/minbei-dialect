@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>闽北方言词典</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="../favicon.ico" />
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white py-6 shadow">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="text-3xl font-bold">闽北方言词典</h1>
+      <p class="text-sm text-green-200 mt-1">Minbei Dialect Dictionary</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-4 py-10 space-y-10">
+
+    <!-- 简介 -->
+    <section>
+      <p class="text-lg text-gray-700">
+        欢迎使用闽北方言词典。本词典收录中→闽北 和 闽北→中常用词汇，支持拼音与模糊搜索，内容涵盖日常用语、传统词汇、宗教用语等分类，致力于保存与传播本地语言资源。
+      </p>
+    </section>
+
+    <!-- 搜索框 -->
+    <section>
+      <form id="searchForm" class="flex items-center space-x-2">
+        <input type="text" id="searchInput" placeholder="输入汉字、拼音或方言词..."
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400" />
+        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+          搜索
+        </button>
+      </form>
+    </section>
+
+    <!-- 分类浏览 -->
+    <section>
+      <h2 class="text-xl font-semibold mb-3">词汇分类</h2>
+      <div class="flex flex-wrap gap-3 text-sm">
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full cursor-pointer hover:bg-green-200">动词</span>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full cursor-pointer hover:bg-green-200">名词</span>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full cursor-pointer hover:bg-green-200">生活用语</span>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full cursor-pointer hover:bg-green-200">宗教用语</span>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full cursor-pointer hover:bg-green-200">自然类</span>
+        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full cursor-pointer hover:bg-green-200">亲属称谓</span>
+      </div>
+    </section>
+
+    <!-- 示例词条 -->
+    <section>
+      <h2 class="text-xl font-semibold mb-3">示例词条</h2>
+      <table class="w-full table-auto border text-sm">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="border px-3 py-2">汉字</th>
+            <th class="border px-3 py-2">闽北方言</th>
+            <th class="border px-3 py-2">拼音</th>
+            <th class="border px-3 py-2">词性</th>
+            <th class="border px-3 py-2">释义</th>
+          </tr>
+        </thead>
+        <tbody id="dictResults">
+          <tr>
+            <td class="border px-3 py-2">吃饭</td>
+            <td class="border px-3 py-2">sih huòng</td>
+            <td class="border px-3 py-2">sih huòng</td>
+            <td class="border px-3 py-2">动词</td>
+            <td class="border px-3 py-2">进食，吃东西</td>
+          </tr>
+          <tr>
+            <td class="border px-3 py-2">妈妈</td>
+            <td class="border px-3 py-2">ā-bā</td>
+            <td class="border px-3 py-2">a ba</td>
+            <td class="border px-3 py-2">名词</td>
+            <td class="border px-3 py-2">母亲</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
+    &copy; 2025 闽北方言资料网 | 页面：方言词典 dictionary/index.html
+  </footer>
+
+  <!-- Script（仅示意，未来可连接 JSON 数据） -->
+  <script>
+    document.getElementById("searchForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const keyword = document.getElementById("searchInput").value.trim();
+      alert("搜索功能尚未接入数据：您输入的是「" + keyword + "」");
+    });
+  </script>
+</body>
+</html>
